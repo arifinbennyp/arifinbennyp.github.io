@@ -1,0 +1,127 @@
+$slebew: monospace;
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: $slebew;
+}
+.row
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+    
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.hero
+{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+}
+
+%white-text{
+    color: white;
+}
+
+h1
+{
+    @extend %white-text
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 275px;
+    
+}
+h2,h3
+{
+    @extend %white-text
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+}
+.hero a
+{
+    text-decoration: none;
+    @extend %white-text
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 37%;
+}
+
+.hero a:hover
+{
+    border: 1px solid white;
+}
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(20170112_131641.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    img{
+        width: 150px;
+        height: auto;
+    }    
+}
+
+table, th, td 
+{
+    width: 1000px;
+    border: 1px solid white;
+    color: white;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+div.gallery
+{
+    margin-left: 25%;
+    margin-top: 100px;
+}
+
+
+
+
