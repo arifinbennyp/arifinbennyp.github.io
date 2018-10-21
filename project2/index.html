@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cashier Web Program</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	
+	<h1> Cashier </h1>
+
+	<div class="row">
+	  <div class="column" style="background-color:none;">
+	    <form>
+			<b>Add New Item</b><br>
+			<input type="text" name="iname" id="iname" placeholder="Item Name" required>
+			<input type="number" name="inumber" id="inumber" placeholder="Price" required min="1">
+		</form>
+		<button onclick="addItem()">Insert</button>
+	    <br><br><br>
+		<form>
+		<b>Item Purchase Input</b><br>
+			<input type="text" id ="itemtext" placeholder="Click Item" disabled="">
+			<input type="text" id ="itemprice" name="itemprice" onKeyUp="calc(this.form)" placeholder="Price" readonly="readonly"/>
+			<input type="number" id ="itemamount" name="itemamount"onKeyUp="calc(this.form)" placeholder="many" style="width:60px" min="1" max="99" required="required"/>
+			<input type="number" id ="finalprice" name="finalprice" onKeyUp="calc(this.form)" placeholder="Price Item Total" readonly="readonly"/>
+		</form>
+			<button onclick="addData()">Submit</button>
+	  </div>
+	  <br>
+	  <div class="column" style="background-color: none;">
+	  	Item List
+	  	<table id ="mytable">
+		<tr>
+			<th>Item</th>
+			<th>Price</th>
+		</tr>
+		</table>
+	  </div>
+	</div>
+	<br>
+	<h2> Item Purchase History </h2>
+	<table style="width:100%" id ="maintable">
+		<tr>
+			<th>No</th>
+			<th>Item</th>
+			<th>Price per Item</th>
+			<th>Amount</th>
+			<th>Total Price</th>
+		</tr>
+
+	<form>
+	Total Price : 
+		<input type="number" id ="totalprice" name="totalprice" onKeyUp="calcd(this.form)" placeholder="Total Price" disabled="disabled">
+	Discount :
+		<input type="number" id ="discount" name="discount" onKeyUp="calcd(this.form)" placeholder=" %">
+	Total Price(After Discount) : 
+		<input type="number" id ="totalpriced" name="totalpriced" onKeyUp="calcd(this.form)" placeholder="After Discount" disabled="disabled">
+	Payment : 
+		<input type="number" id ="payment" name="payment" onKeyUp="calcd(this.form)" placeholder="Payment">
+	Change : 
+		<input type="number" id ="change" name="change" onKeyUp="calcd(this.form)" placeholder="Change" readonly="readonly">
+	</form>
+	<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+
+body {
+
+	background-image: linear-gradient(to right, tomato, yellow);
+	font-family: verdana;
+
+}
+table,th,tr{
+	border: 1px solid black;
+	border-radius: 9px;
+
+
+}
+h1{
+ 
+  font-size: 60px;
+
+}
+button{
+	 border-radius: 9px;
+	 background-color: orange;
+}
+
+input[type=text]{
+	width: 100px;
+	padding: 5px;
+	box-sizing: border-box;
+    border: none;
+    border-radius: 9px;
+    background-color: white;
+    color: black;
+}
+input[type=number]{
+	width: 200px;
+	padding: 5px;
+	box-sizing: border-box;
+    border: none;
+    border-radius: 9px;
+    background-color: white;
+    color: black;
+}
